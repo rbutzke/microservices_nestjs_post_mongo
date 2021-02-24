@@ -1,0 +1,9 @@
+{
+    "service": {
+      "name": "Admin",
+      "tags": [
+        "admin"
+      ],
+      "port": 8000
+    }
+  }

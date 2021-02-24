@@ -1,0 +1,10 @@
+{
+    "service": {
+      "name": "Main",
+      "tags": [
+        "main"
+      ],
+      "port": 4000
+    }
+  }
+  
