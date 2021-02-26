@@ -21,7 +21,7 @@ let ProductService = class ProductService {
     constructor(productModel) {
         this.productModel = productModel;
     }
-    async getAll() {
+    async all() {
         return this.productModel.find().exec();
     }
 };

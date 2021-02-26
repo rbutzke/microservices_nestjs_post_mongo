@@ -5,6 +5,8 @@ import { ProductController } from './product.controller';
 import { Product } from './product.entity';
 import { ProductService } from './product.service';
 
+// Client
+
 @Module({
   imports: [
     TypeOrmModule.forFeature([Product]),
@@ -13,7 +15,7 @@ import { ProductService } from './product.service';
         name: 'PRODUCT_SERVICE',
         transport: Transport.RMQ,
         options: {
-          urls: ['amqp://guest:guest@localhost:5672/teste'],
+          urls: ['amqp://guest:guest@localhost:5672'],
           queue: 'main_queue',
           queueOptions: {
             durable: false

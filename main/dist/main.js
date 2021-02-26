@@ -7,7 +7,7 @@ async function bootstrap() {
     const app = await core_1.NestFactory.createMicroservice(app_module_1.AppModule, {
         transport: microservices_1.Transport.RMQ,
         options: {
-            urls: ['amqp://guest:guest@localhost:5672/'],
+            urls: ['amqp://guest:guest@localhost:5672'],
             queue: 'main_queue',
             queueOptions: {
                 durable: false

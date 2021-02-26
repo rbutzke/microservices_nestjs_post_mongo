@@ -17,8 +17,8 @@ let ProductController = class ProductController {
     constructor(productService) {
         this.productService = productService;
     }
-    async getAll() {
-        return this.productService.getAll();
+    async all() {
+        return this.productService.all();
     }
     async teste(data) {
         console.log(data);
@@ -29,7 +29,7 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
-], ProductController.prototype, "getAll", null);
+], ProductController.prototype, "all", null);
 __decorate([
     microservices_1.EventPattern('teste'),
     __metadata("design:type", Function),

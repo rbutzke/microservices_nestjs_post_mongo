@@ -10,7 +10,7 @@ export class ProductService {
     ){
         
     }
-    async getAll(){
+    async all(){
         return this.productModel.find().exec();
     }
 }

@@ -13,9 +13,9 @@ export class ProductController {
     }
 
     @Get()
-    async getAll(){
+    async all(){
         this.client.emit('teste', 'Este é um teste no RabbitMQ!!!');
-        return this.productService.getAll();
+        return this.productService.all();
     }
 
     @Get(':id')

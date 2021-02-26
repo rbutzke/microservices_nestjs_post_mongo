@@ -7,12 +7,13 @@ export class ProductController {
     constructor(private productService: ProductService){}
 
      @Get()
-     async getAll(){
-         return this.productService.getAll()
+     async all(){
+         return this.productService.all()
      }
-    
+     
      @EventPattern('teste')
      async teste(data: string){
         console.log(data);
      }
+
 }
